@@ -3,10 +3,8 @@
 <head>
         <title>Brian's Megacool Blog - rosalind bioinformatics</title>
         <meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="shortcut icon" href="https://brian-hammond.github.io/theme/images/favicon.ico"/>
         <link rel="stylesheet" href="https://brian-hammond.github.io/theme/css/main.css" type="text/css" />
-        <link href="https://brian-hammond.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Brian's Megacool Blog Atom Feed" />
+   
 
         <!--[if IE]>
                 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
@@ -17,89 +15,1800 @@
 
         <!--[if lt IE 7]>
                 <link rel="stylesheet" type="text/css" media="all" href="https://brian-hammond.github.io/css/ie6.css"/><![endif]-->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js" type="text/javascript"></script>
-
 
 </head>
 
 <body id="index" class="home">
-	
-  <!-- <header id="banner" class="body"> -->
-  <!--               <h1><a href="https://brian-hammond.github.io/"><img src="http://www.launchyard.com/images/logo.png" /></a></h1> -->
-  <!--       </header> --> 
-
-  <div class="LaunchyardDetail">
-    <!-- <p> -->
-    <!-- <img src="https://brian-hammond.github.io/theme/images/blue-pin.png" width="100" height="100" alt="Graph icon"> -->
-    <!-- </p> -->
-    <p><a id="sitesubtitle" href="https://brian-hammond.github.io/"></a></p>
-    <p><a id="aboutlink" href="https://brian-hammond.github.io/pages/about.html">about</a></p>
-
-    <!-- <ul> -->
-    <!--   <li><a href="https://brian-hammond.github.io/pages/about.html">about</a></li> -->
-      <!-- <li><a href="https://brian-hammond.github.io/pages/about.html">articles</a></li> -->
-<!--  -->
-<!--         <br/> -->
-<!--         <br/> -->
-<!--      -->        
-<!--       <li><a href="">Rosalind Bioinformatics Armory</a></li> -->
-<!--      -->
-<!--  -->
-    <!-- </ul> -->
-
-    <!-- This belongs in the about page -->
-      <!--  -->
-      <!-- <a href="https://www.facebook.com/brianhammond8">Facebook</a> -->
-      <!-- <br/> -->
-      <!--  -->
-      <!-- <a href="https://www.instagram.com/brian.hammond">Instagram</a> -->
-      <!-- <br/> -->
-      <!--  -->
-
-<!-- <ul>
-	<li><a href="https://brian-hammond.github.io/category/posts.html">posts</a></li>
-</ul>
- -->
-  </div>
-
+        <header id="banner" class="body">
+                <h1><a href="https://brian-hammond.github.io">Brian's Megacool Blog </a></h1>
+                <nav><ul>
+                    <li ><a href="https://brian-hammond.github.io/category/posts.html">posts</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
         
         
 
+            <aside id="featured" class="body">
+                <article>
+                    <h1 class="entry-title"><a href="https://brian-hammond.github.io/bio-armory.html">Rosalind Bioinformatics Armory</a></h1> 
+<footer class="post-info">
+        <abbr class="published" title="2018-11-25T16:20:00-08:00">
+                Sun 25 November 2018
+        </abbr>
+
+        <address class="vcard author">
+                By <a class="url fn" href="https://brian-hammond.github.io/author/brian-hammond.html">Brian Hammond</a>
+        </address>
+<p>In <a href="https://brian-hammond.github.io/category/posts.html">posts</a>. </p>
+<p>tags: <a href="https://brian-hammond.github.io/tag/rosalind-bioinformatics.html">rosalind bioinformatics</a></p></footer><!-- /.post-info --><style type="text/css">/*!
+*
+* IPython notebook
+*
+*/
+/* CSS font colors for translated ANSI escape sequences */
+/* The color values are a mix of
+   http://www.xcolors.net/dl/baskerville-ivorylight and
+   http://www.xcolors.net/dl/euphrasia */
+.ansi-black-fg {
+  color: #3E424D;
+}
+.ansi-black-bg {
+  background-color: #3E424D;
+}
+.ansi-black-intense-fg {
+  color: #282C36;
+}
+.ansi-black-intense-bg {
+  background-color: #282C36;
+}
+.ansi-red-fg {
+  color: #E75C58;
+}
+.ansi-red-bg {
+  background-color: #E75C58;
+}
+.ansi-red-intense-fg {
+  color: #B22B31;
+}
+.ansi-red-intense-bg {
+  background-color: #B22B31;
+}
+.ansi-green-fg {
+  color: #00A250;
+}
+.ansi-green-bg {
+  background-color: #00A250;
+}
+.ansi-green-intense-fg {
+  color: #007427;
+}
+.ansi-green-intense-bg {
+  background-color: #007427;
+}
+.ansi-yellow-fg {
+  color: #DDB62B;
+}
+.ansi-yellow-bg {
+  background-color: #DDB62B;
+}
+.ansi-yellow-intense-fg {
+  color: #B27D12;
+}
+.ansi-yellow-intense-bg {
+  background-color: #B27D12;
+}
+.ansi-blue-fg {
+  color: #208FFB;
+}
+.ansi-blue-bg {
+  background-color: #208FFB;
+}
+.ansi-blue-intense-fg {
+  color: #0065CA;
+}
+.ansi-blue-intense-bg {
+  background-color: #0065CA;
+}
+.ansi-magenta-fg {
+  color: #D160C4;
+}
+.ansi-magenta-bg {
+  background-color: #D160C4;
+}
+.ansi-magenta-intense-fg {
+  color: #A03196;
+}
+.ansi-magenta-intense-bg {
+  background-color: #A03196;
+}
+.ansi-cyan-fg {
+  color: #60C6C8;
+}
+.ansi-cyan-bg {
+  background-color: #60C6C8;
+}
+.ansi-cyan-intense-fg {
+  color: #258F8F;
+}
+.ansi-cyan-intense-bg {
+  background-color: #258F8F;
+}
+.ansi-white-fg {
+  color: #C5C1B4;
+}
+.ansi-white-bg {
+  background-color: #C5C1B4;
+}
+.ansi-white-intense-fg {
+  color: #A1A6B2;
+}
+.ansi-white-intense-bg {
+  background-color: #A1A6B2;
+}
+.ansi-default-inverse-fg {
+  color: #FFFFFF;
+}
+.ansi-default-inverse-bg {
+  background-color: #000000;
+}
+.ansi-bold {
+  font-weight: bold;
+}
+.ansi-underline {
+  text-decoration: underline;
+}
+/* The following styles are deprecated an will be removed in a future version */
+.ansibold {
+  font-weight: bold;
+}
+.ansi-inverse {
+  outline: 0.5px dotted;
+}
+/* use dark versions for foreground, to improve visibility */
+.ansiblack {
+  color: black;
+}
+.ansired {
+  color: darkred;
+}
+.ansigreen {
+  color: darkgreen;
+}
+.ansiyellow {
+  color: #c4a000;
+}
+.ansiblue {
+  color: darkblue;
+}
+.ansipurple {
+  color: darkviolet;
+}
+.ansicyan {
+  color: steelblue;
+}
+.ansigray {
+  color: gray;
+}
+/* and light for background, for the same reason */
+.ansibgblack {
+  background-color: black;
+}
+.ansibgred {
+  background-color: red;
+}
+.ansibggreen {
+  background-color: green;
+}
+.ansibgyellow {
+  background-color: yellow;
+}
+.ansibgblue {
+  background-color: blue;
+}
+.ansibgpurple {
+  background-color: magenta;
+}
+.ansibgcyan {
+  background-color: cyan;
+}
+.ansibggray {
+  background-color: gray;
+}
+div.cell {
+  /* Old browsers */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-align: stretch;
+  display: -moz-box;
+  -moz-box-orient: vertical;
+  -moz-box-align: stretch;
+  display: box;
+  box-orient: vertical;
+  box-align: stretch;
+  /* Modern browsers */
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  border-radius: 2px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+  width: 100%;
+  padding: 5px;
+  /* This acts as a spacer between cells, that is outside the border */
+  margin: 0px;
+  outline: none;
+  position: relative;
+  overflow: visible;
+}
+div.cell:before {
+  position: absolute;
+  display: block;
+  top: -1px;
+  left: -1px;
+  width: 5px;
+  height: calc(100% +  2px);
+  content: '';
+  background: transparent;
+}
+div.cell.jupyter-soft-selected {
+  border-left-color: #E3F2FD;
+  border-left-width: 1px;
+  padding-left: 5px;
+  border-right-color: #E3F2FD;
+  border-right-width: 1px;
+  background: #E3F2FD;
+}
+@media print {
+  div.cell.jupyter-soft-selected {
+    border-color: transparent;
+  }
+}
+div.cell.selected,
+div.cell.selected.jupyter-soft-selected {
+  border-color: #ababab;
+}
+div.cell.selected:before,
+div.cell.selected.jupyter-soft-selected:before {
+  position: absolute;
+  display: block;
+  top: -1px;
+  left: -1px;
+  width: 5px;
+  height: calc(100% +  2px);
+  content: '';
+  background: #42A5F5;
+}
+@media print {
+  div.cell.selected,
+  div.cell.selected.jupyter-soft-selected {
+    border-color: transparent;
+  }
+}
+.edit_mode div.cell.selected {
+  border-color: #66BB6A;
+}
+.edit_mode div.cell.selected:before {
+  position: absolute;
+  display: block;
+  top: -1px;
+  left: -1px;
+  width: 5px;
+  height: calc(100% +  2px);
+  content: '';
+  background: #66BB6A;
+}
+@media print {
+  .edit_mode div.cell.selected {
+    border-color: transparent;
+  }
+}
+.prompt {
+  /* This needs to be wide enough for 3 digit prompt numbers: In[100]: */
+  min-width: 14ex;
+  /* This padding is tuned to match the padding on the CodeMirror editor. */
+  padding: 0.4em;
+  margin: 0px;
+  font-family: monospace;
+  text-align: right;
+  /* This has to match that of the the CodeMirror class line-height below */
+  line-height: 1.21429em;
+  /* Don't highlight prompt number selection */
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  /* Use default cursor */
+  cursor: default;
+}
+@media (max-width: 540px) {
+  .prompt {
+    text-align: left;
+  }
+}
+div.inner_cell {
+  min-width: 0;
+  /* Old browsers */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-align: stretch;
+  display: -moz-box;
+  -moz-box-orient: vertical;
+  -moz-box-align: stretch;
+  display: box;
+  box-orient: vertical;
+  box-align: stretch;
+  /* Modern browsers */
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  /* Old browsers */
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  box-flex: 1;
+  /* Modern browsers */
+  flex: 1;
+}
+/* input_area and input_prompt must match in top border and margin for alignment */
+div.input_area {
+  border: 1px solid #cfcfcf;
+  border-radius: 2px;
+  background: #f7f7f7;
+  line-height: 1.21429em;
+}
+/* This is needed so that empty prompt areas can collapse to zero height when there
+   is no content in the output_subarea and the prompt. The main purpose of this is
+   to make sure that empty JavaScript output_subareas have no height. */
+div.prompt:empty {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+div.unrecognized_cell {
+  padding: 5px 5px 5px 0px;
+  /* Old browsers */
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: stretch;
+  display: -moz-box;
+  -moz-box-orient: horizontal;
+  -moz-box-align: stretch;
+  display: box;
+  box-orient: horizontal;
+  box-align: stretch;
+  /* Modern browsers */
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+div.unrecognized_cell .inner_cell {
+  border-radius: 2px;
+  padding: 5px;
+  font-weight: bold;
+  color: red;
+  border: 1px solid #cfcfcf;
+  background: #eaeaea;
+}
+div.unrecognized_cell .inner_cell a {
+  color: inherit;
+  text-decoration: none;
+}
+div.unrecognized_cell .inner_cell a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+@media (max-width: 540px) {
+  div.unrecognized_cell > div.prompt {
+    display: none;
+  }
+}
+div.code_cell {
+  /* avoid page breaking on code cells when printing */
+}
+@media print {
+  div.code_cell {
+    page-break-inside: avoid;
+  }
+}
+/* any special styling for code cells that are currently running goes here */
+div.input {
+  page-break-inside: avoid;
+  /* Old browsers */
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: stretch;
+  display: -moz-box;
+  -moz-box-orient: horizontal;
+  -moz-box-align: stretch;
+  display: box;
+  box-orient: horizontal;
+  box-align: stretch;
+  /* Modern browsers */
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+@media (max-width: 540px) {
+  div.input {
+    /* Old browsers */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-align: stretch;
+    display: -moz-box;
+    -moz-box-orient: vertical;
+    -moz-box-align: stretch;
+    display: box;
+    box-orient: vertical;
+    box-align: stretch;
+    /* Modern browsers */
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+/* input_area and input_prompt must match in top border and margin for alignment */
+div.input_prompt {
+  color: #303F9F;
+  border-top: 1px solid transparent;
+}
+div.input_area > div.highlight {
+  margin: 0.4em;
+  border: none;
+  padding: 0px;
+  background-color: transparent;
+}
+div.input_area > div.highlight > pre {
+  margin: 0px;
+  border: none;
+  padding: 0px;
+  background-color: transparent;
+}
+/* The following gets added to the <head> if it is detected that the user has a
+ * monospace font with inconsistent normal/bold/italic height.  See
+ * notebookmain.js.  Such fonts will have keywords vertically offset with
+ * respect to the rest of the text.  The user should select a better font.
+ * See: https://github.com/ipython/ipython/issues/1503
+ *
+ * .CodeMirror span {
+ *      vertical-align: bottom;
+ * }
+ */
+.CodeMirror {
+  line-height: 1.21429em;
+  /* Changed from 1em to our global default */
+  font-size: 14px;
+  height: auto;
+  /* Changed to auto to autogrow */
+  background: none;
+  /* Changed from white to allow our bg to show through */
+}
+.CodeMirror-scroll {
+  /*  The CodeMirror docs are a bit fuzzy on if overflow-y should be hidden or visible.*/
+  /*  We have found that if it is visible, vertical scrollbars appear with font size changes.*/
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+.CodeMirror-lines {
+  /* In CM2, this used to be 0.4em, but in CM3 it went to 4px. We need the em value because */
+  /* we have set a different line-height and want this to scale with that. */
+  /* Note that this should set vertical padding only, since CodeMirror assumes
+       that horizontal padding will be set on CodeMirror pre */
+  padding: 0.4em 0;
+}
+.CodeMirror-linenumber {
+  padding: 0 8px 0 4px;
+}
+.CodeMirror-gutters {
+  border-bottom-left-radius: 2px;
+  border-top-left-radius: 2px;
+}
+.CodeMirror pre {
+  /* In CM3 this went to 4px from 0 in CM2. This sets horizontal padding only,
+    use .CodeMirror-lines for vertical */
+  padding: 0 0.4em;
+  border: 0;
+  border-radius: 0;
+}
+.CodeMirror-cursor {
+  border-left: 1.4px solid black;
+}
+@media screen and (min-width: 2138px) and (max-width: 4319px) {
+  .CodeMirror-cursor {
+    border-left: 2px solid black;
+  }
+}
+@media screen and (min-width: 4320px) {
+  .CodeMirror-cursor {
+    border-left: 4px solid black;
+  }
+}
+/*
+
+Original style from softwaremaniacs.org (c) Ivan Sagalaev <Maniac@SoftwareManiacs.Org>
+Adapted from GitHub theme
+
+*/
+.highlight-base {
+  color: #000;
+}
+.highlight-variable {
+  color: #000;
+}
+.highlight-variable-2 {
+  color: #1a1a1a;
+}
+.highlight-variable-3 {
+  color: #333333;
+}
+.highlight-string {
+  color: #BA2121;
+}
+.highlight-comment {
+  color: #408080;
+  font-style: italic;
+}
+.highlight-number {
+  color: #080;
+}
+.highlight-atom {
+  color: #88F;
+}
+.highlight-keyword {
+  color: #008000;
+  font-weight: bold;
+}
+.highlight-builtin {
+  color: #008000;
+}
+.highlight-error {
+  color: #f00;
+}
+.highlight-operator {
+  color: #AA22FF;
+  font-weight: bold;
+}
+.highlight-meta {
+  color: #AA22FF;
+}
+/* previously not defined, copying from default codemirror */
+.highlight-def {
+  color: #00f;
+}
+.highlight-string-2 {
+  color: #f50;
+}
+.highlight-qualifier {
+  color: #555;
+}
+.highlight-bracket {
+  color: #997;
+}
+.highlight-tag {
+  color: #170;
+}
+.highlight-attribute {
+  color: #00c;
+}
+.highlight-header {
+  color: blue;
+}
+.highlight-quote {
+  color: #090;
+}
+.highlight-link {
+  color: #00c;
+}
+/* apply the same style to codemirror */
+.cm-s-ipython span.cm-keyword {
+  color: #008000;
+  font-weight: bold;
+}
+.cm-s-ipython span.cm-atom {
+  color: #88F;
+}
+.cm-s-ipython span.cm-number {
+  color: #080;
+}
+.cm-s-ipython span.cm-def {
+  color: #00f;
+}
+.cm-s-ipython span.cm-variable {
+  color: #000;
+}
+.cm-s-ipython span.cm-operator {
+  color: #AA22FF;
+  font-weight: bold;
+}
+.cm-s-ipython span.cm-variable-2 {
+  color: #1a1a1a;
+}
+.cm-s-ipython span.cm-variable-3 {
+  color: #333333;
+}
+.cm-s-ipython span.cm-comment {
+  color: #408080;
+  font-style: italic;
+}
+.cm-s-ipython span.cm-string {
+  color: #BA2121;
+}
+.cm-s-ipython span.cm-string-2 {
+  color: #f50;
+}
+.cm-s-ipython span.cm-meta {
+  color: #AA22FF;
+}
+.cm-s-ipython span.cm-qualifier {
+  color: #555;
+}
+.cm-s-ipython span.cm-builtin {
+  color: #008000;
+}
+.cm-s-ipython span.cm-bracket {
+  color: #997;
+}
+.cm-s-ipython span.cm-tag {
+  color: #170;
+}
+.cm-s-ipython span.cm-attribute {
+  color: #00c;
+}
+.cm-s-ipython span.cm-header {
+  color: blue;
+}
+.cm-s-ipython span.cm-quote {
+  color: #090;
+}
+.cm-s-ipython span.cm-link {
+  color: #00c;
+}
+.cm-s-ipython span.cm-error {
+  color: #f00;
+}
+.cm-s-ipython span.cm-tab {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAMCAYAAAAkuj5RAAAAAXNSR0IArs4c6QAAAGFJREFUSMft1LsRQFAQheHPowAKoACx3IgEKtaEHujDjORSgWTH/ZOdnZOcM/sgk/kFFWY0qV8foQwS4MKBCS3qR6ixBJvElOobYAtivseIE120FaowJPN75GMu8j/LfMwNjh4HUpwg4LUAAAAASUVORK5CYII=);
+  background-position: right;
+  background-repeat: no-repeat;
+}
+div.output_wrapper {
+  /* this position must be relative to enable descendents to be absolute within it */
+  position: relative;
+  /* Old browsers */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-align: stretch;
+  display: -moz-box;
+  -moz-box-orient: vertical;
+  -moz-box-align: stretch;
+  display: box;
+  box-orient: vertical;
+  box-align: stretch;
+  /* Modern browsers */
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  z-index: 1;
+}
+/* class for the output area when it should be height-limited */
+div.output_scroll {
+  /* ideally, this would be max-height, but FF barfs all over that */
+  height: 24em;
+  /* FF needs this *and the wrapper* to specify full width, or it will shrinkwrap */
+  width: 100%;
+  overflow: auto;
+  border-radius: 2px;
+  -webkit-box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.8);
+  box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.8);
+  display: block;
+}
+/* output div while it is collapsed */
+div.output_collapsed {
+  margin: 0px;
+  padding: 0px;
+  /* Old browsers */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-align: stretch;
+  display: -moz-box;
+  -moz-box-orient: vertical;
+  -moz-box-align: stretch;
+  display: box;
+  box-orient: vertical;
+  box-align: stretch;
+  /* Modern browsers */
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+div.out_prompt_overlay {
+  height: 100%;
+  padding: 0px 0.4em;
+  position: absolute;
+  border-radius: 2px;
+}
+div.out_prompt_overlay:hover {
+  /* use inner shadow to get border that is computed the same on WebKit/FF */
+  -webkit-box-shadow: inset 0 0 1px #000;
+  box-shadow: inset 0 0 1px #000;
+  background: rgba(240, 240, 240, 0.5);
+}
+div.output_prompt {
+  color: #D84315;
+}
+/* This class is the outer container of all output sections. */
+div.output_area {
+  padding: 0px;
+  page-break-inside: avoid;
+  /* Old browsers */
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: stretch;
+  display: -moz-box;
+  -moz-box-orient: horizontal;
+  -moz-box-align: stretch;
+  display: box;
+  box-orient: horizontal;
+  box-align: stretch;
+  /* Modern browsers */
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+div.output_area .MathJax_Display {
+  text-align: left !important;
+}
+div.output_area 
+div.output_area 
+div.output_area img,
+div.output_area svg {
+  max-width: 100%;
+  height: auto;
+}
+div.output_area img.unconfined,
+div.output_area svg.unconfined {
+  max-width: none;
+}
+div.output_area .mglyph > img {
+  max-width: none;
+}
+/* This is needed to protect the pre formating from global settings such
+   as that of bootstrap */
+.output {
+  /* Old browsers */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-align: stretch;
+  display: -moz-box;
+  -moz-box-orient: vertical;
+  -moz-box-align: stretch;
+  display: box;
+  box-orient: vertical;
+  box-align: stretch;
+  /* Modern browsers */
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+@media (max-width: 540px) {
+  div.output_area {
+    /* Old browsers */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-align: stretch;
+    display: -moz-box;
+    -moz-box-orient: vertical;
+    -moz-box-align: stretch;
+    display: box;
+    box-orient: vertical;
+    box-align: stretch;
+    /* Modern browsers */
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+div.output_area pre {
+  margin: 0;
+  padding: 1px 0 1px 0;
+  border: 0;
+  vertical-align: baseline;
+  color: black;
+  background-color: transparent;
+  border-radius: 0;
+}
+/* This class is for the output subarea inside the output_area and after
+   the prompt div. */
+div.output_subarea {
+  overflow-x: auto;
+  padding: 0.4em;
+  /* Old browsers */
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  box-flex: 1;
+  /* Modern browsers */
+  flex: 1;
+  max-width: calc(100% - 14ex);
+}
+div.output_scroll div.output_subarea {
+  overflow-x: visible;
+}
+/* The rest of the output_* classes are for special styling of the different
+   output types */
+/* all text output has this class: */
+div.output_text {
+  text-align: left;
+  color: #000;
+  /* This has to match that of the the CodeMirror class line-height below */
+  line-height: 1.21429em;
+}
+/* stdout/stderr are 'text' as well as 'stream', but execute_result/error are *not* streams */
+div.output_stderr {
+  background: #fdd;
+  /* very light red background for stderr */
+}
+div.output_latex {
+  text-align: left;
+}
+/* Empty output_javascript divs should have no height */
+div.output_javascript:empty {
+  padding: 0;
+}
+.js-error {
+  color: darkred;
+}
+/* raw_input styles */
+div.raw_input_container {
+  line-height: 1.21429em;
+  padding-top: 5px;
+}
+pre.raw_input_prompt {
+  /* nothing needed here. */
+}
+input.raw_input {
+  font-family: monospace;
+  font-size: inherit;
+  color: inherit;
+  width: auto;
+  /* make sure input baseline aligns with prompt */
+  vertical-align: baseline;
+  /* padding + margin = 0.5em between prompt and cursor */
+  padding: 0em 0.25em;
+  margin: 0em 0.25em;
+}
+input.raw_input:focus {
+  box-shadow: none;
+}
+p.p-space {
+  margin-bottom: 10px;
+}
+div.output_unrecognized {
+  padding: 5px;
+  font-weight: bold;
+  color: red;
+}
+div.output_unrecognized a {
+  color: inherit;
+  text-decoration: none;
+}
+div.output_unrecognized a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+.rendered_html {
+  color: #000;
+  /* any extras will just be numbers: */
+}
+
+
+
+.rendered_html :link {
+  text-decoration: underline;
+}
+.rendered_html :visited {
+  text-decoration: underline;
+}
+
+
+
+
+
+
+.rendered_html h1:first-child {
+  margin-top: 0.538em;
+}
+.rendered_html h2:first-child {
+  margin-top: 0.636em;
+}
+.rendered_html h3:first-child {
+  margin-top: 0.777em;
+}
+.rendered_html h4:first-child {
+  margin-top: 1em;
+}
+.rendered_html h5:first-child {
+  margin-top: 1em;
+}
+.rendered_html h6:first-child {
+  margin-top: 1em;
+}
+.rendered_html ul:not(.list-inline),
+.rendered_html ol:not(.list-inline) {
+  padding-left: 2em;
+}
+
+
+
+
+
+
+
+
+.rendered_html * + ul {
+  margin-top: 1em;
+}
+.rendered_html * + ol {
+  margin-top: 1em;
+}
+
+
+
+
+
+.rendered_html pre,
+
+
+
+
+.rendered_html tr,
+.rendered_html th,
+
+
+.rendered_html tbody tr:nth-child(odd) {
+  background: #f5f5f5;
+}
+.rendered_html tbody tr:hover {
+  background: rgba(66, 165, 245, 0.2);
+}
+.rendered_html * + table {
+  margin-top: 1em;
+}
+
+.rendered_html * + p {
+  margin-top: 1em;
+}
+
+.rendered_html * + img {
+  margin-top: 1em;
+}
+.rendered_html img,
+
+.rendered_html img.unconfined,
+
+
+.rendered_html * + .alert {
+  margin-top: 1em;
+}
+[dir="rtl"] 
+div.text_cell {
+  /* Old browsers */
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: stretch;
+  display: -moz-box;
+  -moz-box-orient: horizontal;
+  -moz-box-align: stretch;
+  display: box;
+  box-orient: horizontal;
+  box-align: stretch;
+  /* Modern browsers */
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+@media (max-width: 540px) {
+  div.text_cell > div.prompt {
+    display: none;
+  }
+}
+div.text_cell_render {
+  /*font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;*/
+  outline: none;
+  resize: none;
+  width: inherit;
+  border-style: none;
+  padding: 0.5em 0.5em 0.5em 0.4em;
+  color: #000;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+a.anchor-link:link {
+  text-decoration: none;
+  padding: 0px 20px;
+  visibility: hidden;
+}
+h1:hover .anchor-link,
+h2:hover .anchor-link,
+h3:hover .anchor-link,
+h4:hover .anchor-link,
+h5:hover .anchor-link,
+h6:hover .anchor-link {
+  visibility: visible;
+}
+.text_cell.rendered .input_area {
+  display: none;
+}
+.text_cell.rendered 
+.text_cell.rendered .rendered_html tr,
+.text_cell.rendered .rendered_html th,
+.text_cell.rendered 
+.text_cell.unrendered .text_cell_render {
+  display: none;
+}
+.text_cell .dropzone .input_area {
+  border: 2px dashed #bababa;
+  margin: -1px;
+}
+.cm-header-1,
+.cm-header-2,
+.cm-header-3,
+.cm-header-4,
+.cm-header-5,
+.cm-header-6 {
+  font-weight: bold;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.cm-header-1 {
+  font-size: 185.7%;
+}
+.cm-header-2 {
+  font-size: 157.1%;
+}
+.cm-header-3 {
+  font-size: 128.6%;
+}
+.cm-header-4 {
+  font-size: 110%;
+}
+.cm-header-5 {
+  font-size: 100%;
+  font-style: italic;
+}
+.cm-header-6 {
+  font-size: 100%;
+  font-style: italic;
+}
+</style>
+<style type="text/css">.highlight .hll { background-color: #ffffcc }
+.highlight  { background: #f8f8f8; }
+.highlight .c { color: #408080; font-style: italic } /* Comment */
+.highlight .err { border: 1px solid #FF0000 } /* Error */
+.highlight .k { color: #008000; font-weight: bold } /* Keyword */
+.highlight .o { color: #666666 } /* Operator */
+.highlight .ch { color: #408080; font-style: italic } /* Comment.Hashbang */
+.highlight .cm { color: #408080; font-style: italic } /* Comment.Multiline */
+.highlight .cp { color: #BC7A00 } /* Comment.Preproc */
+.highlight .cpf { color: #408080; font-style: italic } /* Comment.PreprocFile */
+.highlight .c1 { color: #408080; font-style: italic } /* Comment.Single */
+.highlight .cs { color: #408080; font-style: italic } /* Comment.Special */
+.highlight .gd { color: #A00000 } /* Generic.Deleted */
+.highlight .ge { font-style: italic } /* Generic.Emph */
+.highlight .gr { color: #FF0000 } /* Generic.Error */
+.highlight .gh { color: #000080; font-weight: bold } /* Generic.Heading */
+.highlight .gi { color: #00A000 } /* Generic.Inserted */
+.highlight .go { color: #888888 } /* Generic.Output */
+.highlight .gp { color: #000080; font-weight: bold } /* Generic.Prompt */
+.highlight .gs { font-weight: bold } /* Generic.Strong */
+.highlight .gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+.highlight .gt { color: #0044DD } /* Generic.Traceback */
+.highlight .kc { color: #008000; font-weight: bold } /* Keyword.Constant */
+.highlight .kd { color: #008000; font-weight: bold } /* Keyword.Declaration */
+.highlight .kn { color: #008000; font-weight: bold } /* Keyword.Namespace */
+.highlight .kp { color: #008000 } /* Keyword.Pseudo */
+.highlight .kr { color: #008000; font-weight: bold } /* Keyword.Reserved */
+.highlight .kt { color: #B00040 } /* Keyword.Type */
+.highlight .m { color: #666666 } /* Literal.Number */
+.highlight .s { color: #BA2121 } /* Literal.String */
+.highlight .na { color: #7D9029 } /* Name.Attribute */
+.highlight .nb { color: #008000 } /* Name.Builtin */
+.highlight .nc { color: #0000FF; font-weight: bold } /* Name.Class */
+.highlight .no { color: #880000 } /* Name.Constant */
+.highlight .nd { color: #AA22FF } /* Name.Decorator */
+.highlight .ni { color: #999999; font-weight: bold } /* Name.Entity */
+.highlight .ne { color: #D2413A; font-weight: bold } /* Name.Exception */
+.highlight .nf { color: #0000FF } /* Name.Function */
+.highlight .nl { color: #A0A000 } /* Name.Label */
+.highlight .nn { color: #0000FF; font-weight: bold } /* Name.Namespace */
+.highlight .nt { color: #008000; font-weight: bold } /* Name.Tag */
+.highlight .nv { color: #19177C } /* Name.Variable */
+.highlight .ow { color: #AA22FF; font-weight: bold } /* Operator.Word */
+.highlight .w { color: #bbbbbb } /* Text.Whitespace */
+.highlight .mb { color: #666666 } /* Literal.Number.Bin */
+.highlight .mf { color: #666666 } /* Literal.Number.Float */
+.highlight .mh { color: #666666 } /* Literal.Number.Hex */
+.highlight .mi { color: #666666 } /* Literal.Number.Integer */
+.highlight .mo { color: #666666 } /* Literal.Number.Oct */
+.highlight .sa { color: #BA2121 } /* Literal.String.Affix */
+.highlight .sb { color: #BA2121 } /* Literal.String.Backtick */
+.highlight .sc { color: #BA2121 } /* Literal.String.Char */
+.highlight .dl { color: #BA2121 } /* Literal.String.Delimiter */
+.highlight .sd { color: #BA2121; font-style: italic } /* Literal.String.Doc */
+.highlight .s2 { color: #BA2121 } /* Literal.String.Double */
+.highlight .se { color: #BB6622; font-weight: bold } /* Literal.String.Escape */
+.highlight .sh { color: #BA2121 } /* Literal.String.Heredoc */
+.highlight .si { color: #BB6688; font-weight: bold } /* Literal.String.Interpol */
+.highlight .sx { color: #008000 } /* Literal.String.Other */
+.highlight .sr { color: #BB6688 } /* Literal.String.Regex */
+.highlight .s1 { color: #BA2121 } /* Literal.String.Single */
+.highlight .ss { color: #19177C } /* Literal.String.Symbol */
+.highlight .bp { color: #008000 } /* Name.Builtin.Pseudo */
+.highlight .fm { color: #0000FF } /* Name.Function.Magic */
+.highlight .vc { color: #19177C } /* Name.Variable.Class */
+.highlight .vg { color: #19177C } /* Name.Variable.Global */
+.highlight .vi { color: #19177C } /* Name.Variable.Instance */
+.highlight .vm { color: #19177C } /* Name.Variable.Magic */
+.highlight .il { color: #666666 } /* Literal.Number.Integer.Long */</style>
+<style type="text/css">
+/* Temporary definitions which will become obsolete with Notebook release 5.0 */
+.ansi-black-fg { color: #3E424D; }
+.ansi-black-bg { background-color: #3E424D; }
+.ansi-black-intense-fg { color: #282C36; }
+.ansi-black-intense-bg { background-color: #282C36; }
+.ansi-red-fg { color: #E75C58; }
+.ansi-red-bg { background-color: #E75C58; }
+.ansi-red-intense-fg { color: #B22B31; }
+.ansi-red-intense-bg { background-color: #B22B31; }
+.ansi-green-fg { color: #00A250; }
+.ansi-green-bg { background-color: #00A250; }
+.ansi-green-intense-fg { color: #007427; }
+.ansi-green-intense-bg { background-color: #007427; }
+.ansi-yellow-fg { color: #DDB62B; }
+.ansi-yellow-bg { background-color: #DDB62B; }
+.ansi-yellow-intense-fg { color: #B27D12; }
+.ansi-yellow-intense-bg { background-color: #B27D12; }
+.ansi-blue-fg { color: #208FFB; }
+.ansi-blue-bg { background-color: #208FFB; }
+.ansi-blue-intense-fg { color: #0065CA; }
+.ansi-blue-intense-bg { background-color: #0065CA; }
+.ansi-magenta-fg { color: #D160C4; }
+.ansi-magenta-bg { background-color: #D160C4; }
+.ansi-magenta-intense-fg { color: #A03196; }
+.ansi-magenta-intense-bg { background-color: #A03196; }
+.ansi-cyan-fg { color: #60C6C8; }
+.ansi-cyan-bg { background-color: #60C6C8; }
+.ansi-cyan-intense-fg { color: #258F8F; }
+.ansi-cyan-intense-bg { background-color: #258F8F; }
+.ansi-white-fg { color: #C5C1B4; }
+.ansi-white-bg { background-color: #C5C1B4; }
+.ansi-white-intense-fg { color: #A1A6B2; }
+.ansi-white-intense-bg { background-color: #A1A6B2; }
+
+.ansi-bold { font-weight: bold; }
+</style>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Rosalind-Bioinformatics-Armory-Problems">Rosalind Bioinformatics Armory Problems<a class="anchor-link" href="#Rosalind-Bioinformatics-Armory-Problems">&#182;</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Introduction-to-the-Bioinformatics-Armory">Introduction to the Bioinformatics Armory<a class="anchor-link" href="#Introduction-to-the-Bioinformatics-Armory">&#182;</a></h3><h4 id="Let's-Be-Practical">Let's Be Practical<a class="anchor-link" href="#Let's-Be-Practical">&#182;</a></h4><p>If you are an accomplished coder, then you can write a separate program for every new task you encounter. In practice, these programs only need to be written once and posted to the web, where those of us who are not great coders can use them quickly and efficiently. In the Armory, we will familiarize ourselves with a sampling of some of the more popular bioinformatics tools taken from "out of the box" software.</p>
+<p>To be equitable, we will focus mainly on free, internet-based software and on programs that are compatible with multiple operating systems. The "Problem" section will contain links to this software, with short descriptions about how to use it.</p>
+<h4 id="Problem">Problem<a class="anchor-link" href="#Problem">&#182;</a></h4><p>This initial problem is aimed at familiarizing you with Rosalind's task-solving pipeline. To solve it, you merely have to take a given DNA sequence and find its nucleotide counts; this problem is equivalent to “Counting DNA Nucleotides” in the Stronghold.</p>
+<p>Of the many tools for DNA sequence analysis, one of the most popular is the Sequence Manipulation Suite. Commonly known as SMS 2, it comprises a collection of programs for generating, formatting, and analyzing short strands of DNA and polypeptides.</p>
+<p>One of the simplest SMS 2 programs, called DNA stats, counts the number of occurrences of each nucleotide in a given strand of DNA. An online interface for DNA stats can be found here.</p>
+<p>Given: A DNA string s of length at most 1000 bp.</p>
+<p>Return: Four integers (separated by spaces) representing the respective number of times that the symbols 'A', 'C', 'G', and 'T' occur in s. Note: You must provide your answer in the format shown in the sample output below.</p>
+<h4 id="Sample-Dataset">Sample Dataset<a class="anchor-link" href="#Sample-Dataset">&#182;</a></h4>
+<pre><code>AGCTTTTCATTCTGACTGCAACGGGCAATATGTCTCTGTGTGGATTAAAAAAAGAGTGTCTGATAGCAGC
+
+</code></pre>
+<h4 id="Sample-Output">Sample Output<a class="anchor-link" href="#Sample-Output">&#182;</a></h4>
+<pre><code>20 12 17 21
+
+</code></pre>
+<h4 id="Programming-Shortcut">Programming Shortcut<a class="anchor-link" href="#Programming-Shortcut">&#182;</a></h4><p>Our default choice for existing functions and modules to analyze biological data is BioPython, a set of freely available tools for computational biology that are written in Python. We will give you tips on how to solve certain problems (like this one) using BioPython functions and methods.</p>
+<p>Detailed installation instructions for BioPython are available in PDF and HTML formats.</p>
+<p>BioPython offers a specific data structure called Seq for representing sequences. Seq represents an extension of the "str" (string) object type that is built into Python by supporting additional biologically relevant methods like translate() and reverse_complement().</p>
+<p>In this problem, you can easily use the built-in Python method .count() for strings. Here's how you could count the occurrences of 'A' found in a Seq object.</p>
+<div class="alert alert-block alert-info">
+>>> from Bio.Seq import Seq<br>
+>>> my_seq = Seq("AGTACACTGGT")<br>
+>>> my_seq.count("A")<br><br>
+3
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">Bio.Seq</span> <span class="k">import</span> <span class="n">Seq</span>
+<span class="n">dna</span> <span class="o">=</span> <span class="n">Seq</span><span class="p">(</span><span class="s1">&#39;AGATAACAATATAAATATACCGTCTCTGAACGCGAGAAGGGAATACATTCCGAAGTAAACGAGGATCATACAACTATCCCTTAGGGATGCGCAATCATCCTTACACCAAGGTAGACTCGCTCCGCATCCATAAGCGCCGACTCATCACCCTAGCAGAAACGCCCGGCCAGCAGCAATCATTCCTCCTGCTTTACAATCAAAGGCTAGTCCCGCCGTGGGACATGATGTGACGTTACATCCCTACCGCTCACTGGCTGACTTGAAGTCGTGTCCAATCAGAATGCTTCCTCCGGAGGACCGTGCAATCGCCGTAGTTACTGGGCTAGAGGTTAACTCAGATATTACTTTAATGCCTGCTCGCGCGTGAGTGCAAGGGTTCCAATCTGGGGGGGTATATGTTCTTGTCAACCATTAACGCCGTGGTAGACGATCAGCGTGATTCGTAGTCAATATCCCGTGAAATCAGCTTCTAAGAAGAGACTGGAAACCTCCTTTAGATATTAGTTCATACTATCACGCAGTGCCGGATCATACCGCAGATTTTCGAACTTTGACACGTGGGAAGAAAGAGAGAGTGATCACTGTGTACGCTCTGGGAAAGACTACATAGACAATATAGCAGGGTCAAGTTCGGAAGCAATACCGTATTTTATTCTGTTATCTATTGCGCTATTCTGCGCGTTATACGCTATCGTCACGAGAATCTCTCTACTTTTGTCTCGACATTGGGTCGGTCAGGTCGCTCCCCGGCGCGTCTTGAAGACAGGACCGGTAGCAATATGAAATAATCGGCTATACGTTGGTAGTGCCCTTCGGAGCCTAAAACAGGGGCAAAGCCACTAAACAGGGGCGTCGAAGGTGAGAGACCATCCCACCGGAGGTTCCTACAAA&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">dna</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s1">&#39;A&#39;</span><span class="p">),</span> <span class="n">dna</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s1">&#39;C&#39;</span><span class="p">),</span> <span class="n">dna</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s1">&#39;G&#39;</span><span class="p">),</span> <span class="n">dna</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s1">&#39;T&#39;</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>242 221 212 216
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Introduction-to-Protein-Databases">Introduction to Protein Databases<a class="anchor-link" href="#Introduction-to-Protein-Databases">&#182;</a></h3><h4 id="Four-Commonly-Used-Protein-Databases">Four Commonly Used Protein Databases<a class="anchor-link" href="#Four-Commonly-Used-Protein-Databases">&#182;</a></h4><p>Proteins are identified in different labs around the world, and data about them is gathered into freely accessible databases. A central repository for protein data is UniProt, a comprehensive high-quality database established by an international consortium. UniProt provides detailed protein annotation, including function description, domain structure, and post-translational modifications. It also supports protein similarity search, taxonomy analysis, and literature citations. See Figure 1 for a screenshot of the UniProt homepage.</p>
+<p>UniProt is part of ExPASy, the resource portal of Swiss Institute of Bioinformatics. ExPASy provides access to numerous databases and software tools in different areas of the life sciences.</p>
+<p>The most important component of UniProt is the UniProt Knowledgebase, or UniProtKB (see the help page here), a protein database partially curated by experts. UniProtKB comprises two major parts:</p>
+<p>Swiss-Prot: a manually annotated and reviewed, non-redundant protein sequence database. Each Swiss-Prot entry holds all relevant information about a particular protein, including data taken from scientific literature data and the results of computational analysis of the protein.</p>
+<p>TrEMBL (stands for "Translated EMBL"): an automatically annotated database that is not reviewed. TrEMBL is not a true protein database; instead, it holds translated versions of nucleic acid sequences taken from multiple sources, including the European Molecular Biology Laboratory (EMBL) database, worldwide genome sequencing projects, and the coding regions of genes accessed from GenBank.</p>
+<p>The National Center for Biotechnology Information (NCBI) also maintains protein data. Data equivalent to that of Swiss-Prot is part of the NCBI's RefSeq database (<a href="http://www.ncbi.nlm.nih.gov/RefSeq/">http://www.ncbi.nlm.nih.gov/RefSeq/</a>), a curated collection of genetic sequences. RefSeq records are annotated by NCBI personnel, and they provide reliable information for genomic DNA along with RNA transcribed from DNA and the corresponding translated proteins. NCBI's equivalent project to TrEmbl is the NCBI Protein database, which is part of the larger GenBank database and holds unannotated protein sequences. If a nucleotide sequence contained in GenBank codes for protein, then the corresponding amino acid sequence is automatically annotated and included in the NCBI database with its own protein ID. The NCBI databases also recognize UniProt IDs as search terms.</p>
+<p>Because Swiss-Prot annotation provides so much information, NCBI protein records usually provide links to corresponding Swiss-Prot entries whenever possible.</p>
+<h4 id="Problem">Problem<a class="anchor-link" href="#Problem">&#182;</a></h4><p>You can see a complete description of a protein by entering its UniProt access ID into the site's query field. Equivalently, you may simply insert its ID (uniprot_id) directly into a UniProt hyperlink as follows:</p>
+<p><a href="http://www.uniprot.org/uniprot/uniprot_id">http://www.uniprot.org/uniprot/uniprot_id</a>
+For example, the data for protein B5ZC00 can be found at <a href="http://www.uniprot.org/uniprot/B5ZC00">http://www.uniprot.org/uniprot/B5ZC00</a>.</p>
+<p>Swiss-Prot holds protein data as a structured .txt file. You can obtain it by simply adding .txt to the link:</p>
+<p><a href="http://www.uniprot.org/uniprot/uniprot_id.txt">http://www.uniprot.org/uniprot/uniprot_id.txt</a>
+Given: The UniProt ID of a protein.</p>
+<p>Return: A list of biological processes in which the protein is involved (biological processes are found in a subsection of the protein's "Gene Ontology" (GO) section).</p>
+<h4 id="Sample-Dataset">Sample Dataset<a class="anchor-link" href="#Sample-Dataset">&#182;</a></h4>
+<pre><code>Q5SLP9
+
+</code></pre>
+<h4 id="Sample-Output">Sample Output<a class="anchor-link" href="#Sample-Output">&#182;</a></h4>
+<pre><code>DNA recombination
+DNA repair
+DNA replication
+
+</code></pre>
+<h4 id="Programming-Shortcut">Programming Shortcut<a class="anchor-link" href="#Programming-Shortcut">&#182;</a></h4><p>ExPASy databases can be accessed automatically via Biopython’s Bio.ExPASy module. The function .get_sprot_raw will find a target protein by its ID.</p>
+<p>We can obtain data from an entry by using the SwissProt module. The read() function will handle one SwissProt record and parse will allow you to read multiple records at a time.</p>
+<p>Let's get the data for the B5ZC00 protein:</p>
+<div class="alert alert-block alert-info">
+>>>from Bio import ExPASy<br>
+>>>from Bio import SwissProt<br>
+>>>handle = ExPASy.get_sprot_raw('B5ZC00') #you can give several IDs separated by commas<br>
+>>>record = SwissProt.read(handle) # use SwissProt.parse for multiple proteins<br>
+</div><p>We now can check the list of attributes for the obtained Swiss-Prot record:</p>
+<div class="alert alert-block alert-info">
+ >>> dir(record)<br>
+ [..., 'accessions', 'annotation_update', 'comments', 'created', 'cross_references',
+ 'data_class', 'description', 'entry_name', 'features', 'gene_name', 'host_organism', 'host_taxonomy_id', 'keywords',
+ 'molecule_type', 'organelle', 'organism', 'organism_classification', 'references', 'seqinfo', 'sequence',
+ 'sequence_length', 'sequence_update', 'taxonomy_id']
+</div><p>To see the list of references to other databases, we can check the .cross_references attribute of our record:</p>
+<div class="alert alert-block alert-info">
+>>>record.cross_references[0]<br>
+('EMBL', 'CP001184', 'ACI60310.1', '-', 'Genomic_DNA')
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[32]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">Bio</span> <span class="k">import</span> <span class="n">ExPASy</span> <span class="k">as</span> <span class="n">ep</span>
+<span class="kn">from</span> <span class="nn">Bio</span> <span class="k">import</span> <span class="n">SwissProt</span> <span class="k">as</span> <span class="n">sp</span>
+<span class="n">handle</span> <span class="o">=</span> <span class="n">ep</span><span class="o">.</span><span class="n">get_sprot_raw</span><span class="p">(</span><span class="s1">&#39;Q6CFS5&#39;</span><span class="p">)</span>
+<span class="n">record</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">handle</span><span class="p">)</span>
+<span class="nb">dir</span><span class="p">(</span><span class="n">record</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[32]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[&#39;__class__&#39;,
+ &#39;__delattr__&#39;,
+ &#39;__dict__&#39;,
+ &#39;__dir__&#39;,
+ &#39;__doc__&#39;,
+ &#39;__eq__&#39;,
+ &#39;__format__&#39;,
+ &#39;__ge__&#39;,
+ &#39;__getattribute__&#39;,
+ &#39;__gt__&#39;,
+ &#39;__hash__&#39;,
+ &#39;__init__&#39;,
+ &#39;__init_subclass__&#39;,
+ &#39;__le__&#39;,
+ &#39;__lt__&#39;,
+ &#39;__module__&#39;,
+ &#39;__ne__&#39;,
+ &#39;__new__&#39;,
+ &#39;__reduce__&#39;,
+ &#39;__reduce_ex__&#39;,
+ &#39;__repr__&#39;,
+ &#39;__setattr__&#39;,
+ &#39;__sizeof__&#39;,
+ &#39;__str__&#39;,
+ &#39;__subclasshook__&#39;,
+ &#39;__weakref__&#39;,
+ &#39;accessions&#39;,
+ &#39;annotation_update&#39;,
+ &#39;comments&#39;,
+ &#39;created&#39;,
+ &#39;cross_references&#39;,
+ &#39;data_class&#39;,
+ &#39;description&#39;,
+ &#39;entry_name&#39;,
+ &#39;features&#39;,
+ &#39;gene_name&#39;,
+ &#39;host_organism&#39;,
+ &#39;host_taxonomy_id&#39;,
+ &#39;keywords&#39;,
+ &#39;molecule_type&#39;,
+ &#39;organelle&#39;,
+ &#39;organism&#39;,
+ &#39;organism_classification&#39;,
+ &#39;protein_existence&#39;,
+ &#39;references&#39;,
+ &#39;seqinfo&#39;,
+ &#39;sequence&#39;,
+ &#39;sequence_length&#39;,
+ &#39;sequence_update&#39;,
+ &#39;taxonomy_id&#39;]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[33]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">record</span><span class="o">.</span><span class="n">cross_references</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[33]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[(&#39;EMBL&#39;, &#39;CR382128&#39;, &#39;CAG82714.1&#39;, &#39;-&#39;, &#39;Genomic_DNA&#39;),
+ (&#39;RefSeq&#39;, &#39;XP_500487.1&#39;, &#39;XM_500487.1&#39;),
+ (&#39;ProteinModelPortal&#39;, &#39;Q6CFS5&#39;, &#39;-&#39;),
+ (&#39;SMR&#39;, &#39;Q6CFS5&#39;, &#39;-&#39;),
+ (&#39;STRING&#39;, &#39;4952.XP_500487.1&#39;, &#39;-&#39;),
+ (&#39;PRIDE&#39;, &#39;Q6CFS5&#39;, &#39;-&#39;),
+ (&#39;EnsemblFungi&#39;, &#39;CAG82714&#39;, &#39;CAG82714&#39;, &#39;YALI0_B04268g&#39;),
+ (&#39;GeneID&#39;, &#39;2907431&#39;, &#39;-&#39;),
+ (&#39;KEGG&#39;, &#39;yli:YALI0B04268g&#39;, &#39;-&#39;),
+ (&#39;HOGENOM&#39;, &#39;HOG000233033&#39;, &#39;-&#39;),
+ (&#39;InParanoid&#39;, &#39;Q6CFS5&#39;, &#39;-&#39;),
+ (&#39;KO&#39;, &#39;K08286&#39;, &#39;-&#39;),
+ (&#39;OMA&#39;, &#39;NAIHLTM&#39;, &#39;-&#39;),
+ (&#39;OrthoDB&#39;, &#39;EOG092C0HH3&#39;, &#39;-&#39;),
+ (&#39;Proteomes&#39;, &#39;UP000001300&#39;, &#39;Chromosome B&#39;),
+ (&#39;GO&#39;, &#39;GO:0051285&#39;, &#39;C:cell cortex of cell tip&#39;, &#39;IEA:EnsemblFungi&#39;),
+ (&#39;GO&#39;, &#39;GO:0032153&#39;, &#39;C:cell division site&#39;, &#39;IEA:EnsemblFungi&#39;),
+ (&#39;GO&#39;, &#39;GO:0005935&#39;, &#39;C:cellular bud neck&#39;, &#39;IEA:EnsemblFungi&#39;),
+ (&#39;GO&#39;, &#39;GO:0005934&#39;, &#39;C:cellular bud tip&#39;, &#39;IEA:EnsemblFungi&#39;),
+ (&#39;GO&#39;, &#39;GO:0010494&#39;, &#39;C:cytoplasmic stress granule&#39;, &#39;IEA:EnsemblFungi&#39;),
+ (&#39;GO&#39;, &#39;GO:0035838&#39;, &#39;C:growing cell tip&#39;, &#39;IEA:EnsemblFungi&#39;),
+ (&#39;GO&#39;, &#39;GO:0000131&#39;, &#39;C:incipient cellular bud site&#39;, &#39;IEA:EnsemblFungi&#39;),
+ (&#39;GO&#39;, &#39;GO:0005622&#39;, &#39;C:intracellular&#39;, &#39;IBA:GO_Central&#39;),
+ (&#39;GO&#39;, &#39;GO:0043332&#39;, &#39;C:mating projection tip&#39;, &#39;IEA:EnsemblFungi&#39;),
+ (&#39;GO&#39;, &#39;GO:0005634&#39;, &#39;C:nucleus&#39;, &#39;IEA:EnsemblFungi&#39;),
+ (&#39;GO&#39;, &#39;GO:0005524&#39;, &#39;F:ATP binding&#39;, &#39;IEA:UniProtKB-KW&#39;),
+ (&#39;GO&#39;, &#39;GO:0042802&#39;, &#39;F:identical protein binding&#39;, &#39;IEA:EnsemblFungi&#39;),
+ (&#39;GO&#39;,
+  &#39;GO:0004674&#39;,
+  &#39;F:protein serine/threonine kinase activity&#39;,
+  &#39;IBA:GO_Central&#39;),
+ (&#39;GO&#39;, &#39;GO:0007118&#39;, &#39;P:budding cell apical bud growth&#39;, &#39;IEA:EnsemblFungi&#39;),
+ (&#39;GO&#39;,
+  &#39;GO:0000920&#39;,
+  &#39;P:cell separation after cytokinesis&#39;,
+  &#39;IEA:EnsemblFungi&#39;),
+ (&#39;GO&#39;,
+  &#39;GO:0071472&#39;,
+  &#39;P:cellular response to salt stress&#39;,
+  &#39;IEA:EnsemblFungi&#39;),
+ (&#39;GO&#39;,
+  &#39;GO:0030866&#39;,
+  &#39;P:cortical actin cytoskeleton organization&#39;,
+  &#39;IEA:EnsemblFungi&#39;),
+ (&#39;GO&#39;,
+  &#39;GO:0030950&#39;,
+  &#39;P:establishment or maintenance of actin cytoskeleton polarity&#39;,
+  &#39;IEA:EnsemblFungi&#39;),
+ (&#39;GO&#39;, &#39;GO:0071940&#39;, &#39;P:fungal-type cell wall assembly&#39;, &#39;IEA:EnsemblFungi&#39;),
+ (&#39;GO&#39;, &#39;GO:0035556&#39;, &#39;P:intracellular signal transduction&#39;, &#39;IBA:GO_Central&#39;),
+ (&#39;GO&#39;,
+  &#39;GO:0097248&#39;,
+  &#39;P:maintenance of protein location in cell cortex of cell tip&#39;,
+  &#39;IEA:EnsemblFungi&#39;),
+ (&#39;GO&#39;, &#39;GO:0018105&#39;, &#39;P:peptidyl-serine phosphorylation&#39;, &#39;IBA:GO_Central&#39;),
+ (&#39;GO&#39;,
+  &#39;GO:2000247&#39;,
+  &#39;P:positive regulation of establishment or maintenance of bipolar cell polarity regulating cell shape&#39;,
+  &#39;IEA:EnsemblFungi&#39;),
+ (&#39;GO&#39;,
+  &#39;GO:0060237&#39;,
+  &#39;P:regulation of fungal-type cell wall organization&#39;,
+  &#39;IEA:EnsemblFungi&#39;),
+ (&#39;InterPro&#39;, &#39;IPR000961&#39;, &#39;AGC-kinase_C&#39;),
+ (&#39;InterPro&#39;, &#39;IPR011009&#39;, &#39;Kinase-like_dom_sf&#39;),
+ (&#39;InterPro&#39;, &#39;IPR000719&#39;, &#39;Prot_kinase_dom&#39;),
+ (&#39;InterPro&#39;, &#39;IPR017441&#39;, &#39;Protein_kinase_ATP_BS&#39;),
+ (&#39;InterPro&#39;, &#39;IPR008271&#39;, &#39;Ser/Thr_kinase_AS&#39;),
+ (&#39;Pfam&#39;, &#39;PF00069&#39;, &#39;Pkinase&#39;, &#39;2&#39;),
+ (&#39;SMART&#39;, &#39;SM00133&#39;, &#39;S_TK_X&#39;, &#39;1&#39;),
+ (&#39;SMART&#39;, &#39;SM00220&#39;, &#39;S_TKc&#39;, &#39;1&#39;),
+ (&#39;SUPFAM&#39;, &#39;SSF56112&#39;, &#39;SSF56112&#39;, &#39;2&#39;),
+ (&#39;PROSITE&#39;, &#39;PS51285&#39;, &#39;AGC_KINASE_CTER&#39;, &#39;1&#39;),
+ (&#39;PROSITE&#39;, &#39;PS00107&#39;, &#39;PROTEIN_KINASE_ATP&#39;, &#39;1&#39;),
+ (&#39;PROSITE&#39;, &#39;PS50011&#39;, &#39;PROTEIN_KINASE_DOM&#39;, &#39;1&#39;),
+ (&#39;PROSITE&#39;, &#39;PS00108&#39;, &#39;PROTEIN_KINASE_ST&#39;, &#39;1&#39;)]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[34]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">ref</span> <span class="ow">in</span> <span class="n">record</span><span class="o">.</span><span class="n">cross_references</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">ref</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;GO&#39;</span><span class="p">:</span>
+        <span class="nb">print</span> <span class="p">(</span><span class="n">ref</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>(&#39;GO&#39;, &#39;GO:0051285&#39;, &#39;C:cell cortex of cell tip&#39;, &#39;IEA:EnsemblFungi&#39;)
+(&#39;GO&#39;, &#39;GO:0032153&#39;, &#39;C:cell division site&#39;, &#39;IEA:EnsemblFungi&#39;)
+(&#39;GO&#39;, &#39;GO:0005935&#39;, &#39;C:cellular bud neck&#39;, &#39;IEA:EnsemblFungi&#39;)
+(&#39;GO&#39;, &#39;GO:0005934&#39;, &#39;C:cellular bud tip&#39;, &#39;IEA:EnsemblFungi&#39;)
+(&#39;GO&#39;, &#39;GO:0010494&#39;, &#39;C:cytoplasmic stress granule&#39;, &#39;IEA:EnsemblFungi&#39;)
+(&#39;GO&#39;, &#39;GO:0035838&#39;, &#39;C:growing cell tip&#39;, &#39;IEA:EnsemblFungi&#39;)
+(&#39;GO&#39;, &#39;GO:0000131&#39;, &#39;C:incipient cellular bud site&#39;, &#39;IEA:EnsemblFungi&#39;)
+(&#39;GO&#39;, &#39;GO:0005622&#39;, &#39;C:intracellular&#39;, &#39;IBA:GO_Central&#39;)
+(&#39;GO&#39;, &#39;GO:0043332&#39;, &#39;C:mating projection tip&#39;, &#39;IEA:EnsemblFungi&#39;)
+(&#39;GO&#39;, &#39;GO:0005634&#39;, &#39;C:nucleus&#39;, &#39;IEA:EnsemblFungi&#39;)
+(&#39;GO&#39;, &#39;GO:0005524&#39;, &#39;F:ATP binding&#39;, &#39;IEA:UniProtKB-KW&#39;)
+(&#39;GO&#39;, &#39;GO:0042802&#39;, &#39;F:identical protein binding&#39;, &#39;IEA:EnsemblFungi&#39;)
+(&#39;GO&#39;, &#39;GO:0004674&#39;, &#39;F:protein serine/threonine kinase activity&#39;, &#39;IBA:GO_Central&#39;)
+(&#39;GO&#39;, &#39;GO:0007118&#39;, &#39;P:budding cell apical bud growth&#39;, &#39;IEA:EnsemblFungi&#39;)
+(&#39;GO&#39;, &#39;GO:0000920&#39;, &#39;P:cell separation after cytokinesis&#39;, &#39;IEA:EnsemblFungi&#39;)
+(&#39;GO&#39;, &#39;GO:0071472&#39;, &#39;P:cellular response to salt stress&#39;, &#39;IEA:EnsemblFungi&#39;)
+(&#39;GO&#39;, &#39;GO:0030866&#39;, &#39;P:cortical actin cytoskeleton organization&#39;, &#39;IEA:EnsemblFungi&#39;)
+(&#39;GO&#39;, &#39;GO:0030950&#39;, &#39;P:establishment or maintenance of actin cytoskeleton polarity&#39;, &#39;IEA:EnsemblFungi&#39;)
+(&#39;GO&#39;, &#39;GO:0071940&#39;, &#39;P:fungal-type cell wall assembly&#39;, &#39;IEA:EnsemblFungi&#39;)
+(&#39;GO&#39;, &#39;GO:0035556&#39;, &#39;P:intracellular signal transduction&#39;, &#39;IBA:GO_Central&#39;)
+(&#39;GO&#39;, &#39;GO:0097248&#39;, &#39;P:maintenance of protein location in cell cortex of cell tip&#39;, &#39;IEA:EnsemblFungi&#39;)
+(&#39;GO&#39;, &#39;GO:0018105&#39;, &#39;P:peptidyl-serine phosphorylation&#39;, &#39;IBA:GO_Central&#39;)
+(&#39;GO&#39;, &#39;GO:2000247&#39;, &#39;P:positive regulation of establishment or maintenance of bipolar cell polarity regulating cell shape&#39;, &#39;IEA:EnsemblFungi&#39;)
+(&#39;GO&#39;, &#39;GO:0060237&#39;, &#39;P:regulation of fungal-type cell wall organization&#39;, &#39;IEA:EnsemblFungi&#39;)
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[35]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">ref</span> <span class="ow">in</span> <span class="n">record</span><span class="o">.</span><span class="n">cross_references</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">ref</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;GO&#39;</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">ref</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;P&#39;</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">ref</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">2</span><span class="p">:])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>budding cell apical bud growth
+cell separation after cytokinesis
+cellular response to salt stress
+cortical actin cytoskeleton organization
+establishment or maintenance of actin cytoskeleton polarity
+fungal-type cell wall assembly
+intracellular signal transduction
+maintenance of protein location in cell cortex of cell tip
+peptidyl-serine phosphorylation
+positive regulation of establishment or maintenance of bipolar cell polarity regulating cell shape
+regulation of fungal-type cell wall organization
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[40]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">Bio</span> <span class="k">import</span> <span class="n">Entrez</span> <span class="k">as</span> <span class="n">e</span>
+<span class="n">e</span><span class="o">.</span><span class="n">email</span> <span class="o">=</span> <span class="s1">&#39;BrianHammond555@gmail.com&#39;</span>
+<span class="n">databases</span> <span class="o">=</span> <span class="n">e</span><span class="o">.</span><span class="n">einfo</span><span class="p">()</span>
+<span class="nb">print</span> <span class="p">(</span><span class="n">e</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">databases</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>DictElement({&#39;DbList&#39;: [&#39;pubmed&#39;, &#39;protein&#39;, &#39;nuccore&#39;, &#39;ipg&#39;, &#39;nucleotide&#39;, &#39;nucgss&#39;, &#39;nucest&#39;, &#39;structure&#39;, &#39;sparcle&#39;, &#39;genome&#39;, &#39;annotinfo&#39;, &#39;assembly&#39;, &#39;bioproject&#39;, &#39;biosample&#39;, &#39;blastdbinfo&#39;, &#39;books&#39;, &#39;cdd&#39;, &#39;clinvar&#39;, &#39;clone&#39;, &#39;gap&#39;, &#39;gapplus&#39;, &#39;grasp&#39;, &#39;dbvar&#39;, &#39;gene&#39;, &#39;gds&#39;, &#39;geoprofiles&#39;, &#39;homologene&#39;, &#39;medgen&#39;, &#39;mesh&#39;, &#39;ncbisearch&#39;, &#39;nlmcatalog&#39;, &#39;omim&#39;, &#39;orgtrack&#39;, &#39;pmc&#39;, &#39;popset&#39;, &#39;probe&#39;, &#39;proteinclusters&#39;, &#39;pcassay&#39;, &#39;biosystems&#39;, &#39;pccompound&#39;, &#39;pcsubstance&#39;, &#39;pubmedhealth&#39;, &#39;seqannot&#39;, &#39;snp&#39;, &#39;sra&#39;, &#39;taxonomy&#39;, &#39;biocollections&#39;, &#39;unigene&#39;, &#39;gencoll&#39;, &#39;gtr&#39;]}, attributes={})
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[74]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">Bio</span> <span class="k">import</span> <span class="n">Entrez</span> <span class="k">as</span> <span class="n">e</span>
+<span class="k">def</span> <span class="nf">get_fasta</span><span class="p">(</span><span class="n">gid</span><span class="p">):</span>
+    <span class="n">e</span><span class="o">.</span><span class="n">email</span> <span class="o">=</span> <span class="s1">&#39;BrianHammond555@gmail.com&#39;</span>
+    <span class="n">database</span> <span class="o">=</span> <span class="n">e</span><span class="o">.</span><span class="n">einfo</span><span class="p">(</span><span class="n">db</span> <span class="o">=</span> <span class="s1">&#39;nucleotide&#39;</span><span class="p">)</span>
+    <span class="n">handle</span> <span class="o">=</span> <span class="n">e</span><span class="o">.</span><span class="n">efetch</span><span class="p">(</span><span class="n">db</span> <span class="o">=</span> <span class="s1">&#39;nucleotide&#39;</span><span class="p">,</span> <span class="nb">id</span> <span class="o">=</span> <span class="n">gid</span><span class="p">,</span> <span class="n">rettype</span> <span class="o">=</span> <span class="s1">&#39;fasta&#39;</span><span class="p">,</span> <span class="n">retmode</span> <span class="o">=</span> <span class="s1">&#39;text&#39;</span> <span class="p">)</span>
+    <span class="n">fasta_name</span> <span class="o">=</span> <span class="n">gid</span> <span class="o">+</span> <span class="s1">&#39;.fasta&#39;</span>
+    <span class="n">fasta_text</span> <span class="o">=</span> <span class="n">handle</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+    <span class="n">file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">fasta_name</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span>
+    <span class="n">file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">fasta_text</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">fasta_text</span><span class="p">)</span>
     
-            <aside id="featured">
-                <div class="body">
-                    <article>
-                        <h1 class="entry-title"><a href="https://brian-hammond.github.io/bio-armory.html">Rosalind Bioinformatics Armory</a></h1>
-<div class="post-info">
-	<ul>
-        <li class="vcard author">
-                 by&nbsp;<a class="url fn" href="https://brian-hammond.github.io/author/brian-hammond.html">Brian Hammond</a>
-        </li>
-        <li class="published" title="2018-11-25T16:20:00-08:00">
-          on&nbsp;Sun 25 November 2018
-        </li>
 
-	</ul>
-<p>Category: <a href="https://brian-hammond.github.io/tag/rosalind-bioinformatics.html">rosalind bioinformatics</a></p>
-</div><!-- /.post-info --><p>Me working through problems from Rosalind's Bioinformatics Armory problem set.</p>
-                    </article>
-                </div>
+<span class="n">gid1</span> <span class="o">=</span> <span class="s1">&#39;JX205496.1&#39;</span>
+<span class="n">gid2</span> <span class="o">=</span> <span class="s1">&#39;JX469991.1&#39;</span>
+<span class="n">get_fasta</span><span class="p">(</span><span class="n">gid1</span><span class="p">)</span>
+<span class="n">get_fasta</span><span class="p">(</span><span class="n">gid2</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>&gt;JX205496.1 Orchis italica C-class MADS-box-like protein (AG) mRNA, complete cds
+ATTCTTTCCTGTTTCCCTCTCTGCCCTCCCTCTCTCTCCCCACCATCTTCTCTCTTTATTTGAAACCAAT
+GGCAATGGATTCTTGAGGTAAGAACCAGCGCTCCCTTCCTCTTGCCGCTTCATACAGAAAGAAACAGACG
+AGAAGCATCGAACCTATCAGCTTAGCGGCCAAACACAATTCCAGTCACAGAGAGCAACAGAGGAGGACAT
+GATGGAGCCGAAGGAAAAGATGGGAAGGGGAAAGATAGAGATAAAGAGGATAGAAAATACCACGAACAGG
+CAAGTCACCTTTTGTAAGCGCCGCAATGGCCTTCTCAAAAAAGCCTACGAGCTCTCTGTCCTCTGCGACG
+CCGAGGTCGCCCTCGTCATCTTCTCCACCCGTGGCCGCCTCTACGAGTATGCCAATAACAGTGTAAAGGG
+CACTATCGAGCGTTACAAGAAAGCAAGCAGTGATAACTCCAGTTCTGGATCAATATCTGCAACAAATGCG
+CAGTATTATCTTCAAGAAGCCTCAAAACTTCGACAGCAAATCACAAGCTTACAGAATTCAAACAGACATC
+TGATGGGTGAGGCTCTAAGCACCATGAACCTAAGGGACTTGAAGCAGCTGGAATCAAGGCTAGAAAAAGG
+CATCAACAAAATAAGAACCAAAAAGAATGAGTTGCTATATGCTGAGATAGAGTACATGCAAAAAAGGGAG
+GTGGAACTTCAAAACGACAACATGTACCTCCGAAATAAGATAGCTGATAATGAAAGATCACAGCAGCAGC
+AACACATGAACATGATGCCATCAACAAGCACTGATTATGAAATGATGCCTCCCTTTGACTCCAGAAACTT
+CCTGCAAGTGAATCTAATGGATCCCAACAGTCACTACTCTCTCCAGCAGCAAACTGCCCTTCAATTAGGC
+TAGGTAGCATTACTGCTGCATTCCTGGAGCTGCATGAAGAAGGAGAAGCTTCCTCCATGGAAACTTCATT
+ATGCCAACTATTATAGTTGGTGTGAATTGGGAATAGCAGGTTTTTCTCCACTACAGTTCATGTGATGACT
+CTATCCTATGCTAACTATTATACGTCATTATGCTATATATGTTGGACACATTGAGAACTTTGTTGTATAT
+TAATCAAACTCTATGTTTAGTTTGCATGTAAAAAAAAAAAAAAAAAAAAAA
+
+
+&gt;JX469991.1 Zea mays subsp. mays clone UT3351 ABI3VP1-type transcription factor mRNA, partial cds
+ATGGAAGCCTCCGCCGGCTCGTCGCCACCGCACTCCCAAGAGAACCCGCCGGAGCACGGTGGCGACATGG
+GAGGGGCCCCCGCGGAGGAGATCGGAGGGGAGGCGGCGGATGATTTCATGTTCGCTGAAGACACGTTCCC
+CTCCCTCCCGGACTTCCCTTGCCTTTCGTCGCCGTCCAGCTCCACCTTCTCGTCCAACTCCTCGTCAAAC
+TCCTCCAGCGCCTACACCAACACGGCAGGAAGAGCCGGCGGCGAGCCCTCCGAGCCTGCTTCGGCCGGAG
+AAGGGTTTGATGCGCTCGATGACATCGACCAGCTCCTCGACTTCGCGTCGCTTTCCATGCCGTGGGACTC
+CGAGCCGTTCCCGGGGGTTAGCATGATGCTAGAGAACGCCATGTCGGCGCCGCCGCAGCCGGTGGGCGAC
+GGCATGAGTGAAGAGAAAGCCGTGCCGGAAGGGACCACAGGGGGAGAGGAGGCCTGCATGGATGCGTCGG
+AGGGGGAGGAGCTGCCGCGGTTCTTCATGGAGTGGCTCACGAGCAACCGCGAAAACATCTCGGCCGAGGA
+TCTCCGCGGGATCCGCCTCCGCCGCTCCACCATCGAGGCCGCCGCCGCCCGGCTCGGCGGCGGGCGCCAG
+GGCACCATGCAGCTGCTCAAGCTCATCCTCACCTGGGTGCAGAACCACCACCTCCAGAGGAAGCGCCCGC
+GCGACGTGATGGAGGAGGAGGCGGGCCTGCACGTCCAGCTCCCCAGCCCGGTCGCCAACCCACCAGGATA
+CGAGTTCCCCGCCGGCGGACAGGACATGGCCGCGGGCGGCGGCACATCTTGGATGCCCCACCAGCAGGCA
+TTCACGCCGCCTGCTGCGTACGGCGGCGACGCGGTGTACCCGAGCGCGGCAGGCCAACAGTACTCTTTCC
+ACCAGGGCCCCAGCACGAGCAGCGTGGTCGTGAACAGCCAACCGTTCTCCCCGCCGCCTGTGGGCGACAT
+GCACGGCGCGAACATGGCCTGGCCGCAGCAGTACGTGCCGTTCCCACCGCCTGGGGCTTCCACGGGCTCT
+TACCCTATGCCGCAGCCGTTCTCCCCCGGATTCGGCGGGCAGTACGCCGGCGCCGGCGCTGGCCACCTCT
+CAGTGGCCCCCCAGCGCATGGCAGGCGTGGAGGCCTCGGCGACCAAGGAGGCCCGCAAGAAGCGCATGGC
+GAGACAGCGGCGCCTGTCCTGCCTGCAGCAGCAGCGCAGCCAGCAGCTGAGCCTGGGCCAGATCCAGGCC
+TCCGTCCACCTGCAGGAGCCGTCCCCTCGGTCCACGCACTCCGGCCCGGTCACGCCGTCAGCAGGCGGCT
+GGGGATTCTGGTCGCCGAGCAGCCAGCAGCAGGTCCAGAACCCGCTCTCCAAGTCCAATTCATCAAGGGC
+GCCGCCTCCCTCGCTGGAAGCGGCGGCGGTGGCGCCACAGACAAAGCCCGCGCCTGCTGGTGCTCGGCAG
+GACGACATTCACCACCGCCTCGCAGCGGCTTCAGATAAGCGGCAGGGCGCCAAGGCGGACAAGAACCTGC
+GGTTCCTGCTGCAGAAGGTGCTGAAGCAGAGCGACGTCGGGAGCCTCGGCCGCATCGTGCTCCCCAAAGA
+AGCGGAGGTTCACCTGCCGGAGCTGAAGACGAGGGATGGCATCTCCATCCCCATGGAGGACATCGGAACG
+TCGCGCGTGTGGAACATGCGGTACAGGTTTTGGCCCAACAACAAGAGCAGAATGTATCTGCTGGAGAACA
+CAGGGGAATTTGTTCGTTCCAACGAGCTTCAGGAGGGGGATTTCATAGTGATCTACTCCGATGTCAAGTC
+GGGCAAATATCTGATACGGGGCGTGAAGGTAAGGCCCCCGCCGGCGCAAGAGCAAGGCAGTGGTTCCAGC
+GGGGGAGGCAAGCACAGGCCCCTCTGTCCAGCAGGTCCAGGGAGAGCCGCAGCCGCCGGTGCTCCTGAAG
+ACGCCGTCGTCGACGGGGTCAGCGGCGCCTGCAAGGGGAGGTCTCCGGAAGGCGTGCGGCGGGTTCGGCA
+GCAGGGAGCCGGCGCCATGAGCCAGATGGCGGTGAGCATC
+
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+ 
+
+
+<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = '//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: 'center'," +
+        "    displayIndent: '0em'," +
+        "    showMathMenu: true," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['$','$'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        " linebreaks: { automatic: true, width: '95% container' }, " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'black ! important'} }" +
+        "    } " +
+        "}); ";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+</script>
+                </article>
+<p class="paginator">
+    Page 1 / 1
+</p>
             </aside><!-- /#featured -->
-            
-        
-        <section id="extras" >
-        
+            </ol><!-- /#posts-list -->
+            </section><!-- /#content -->
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>blogroll</h2>
+                        <ul>
+                            <li><a href="http://getpelican.com/">Pelican</a></li>
+                            <li><a href="http://python.org/">Python.org</a></li>
+                            <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
+                            <li><a href="#">You can modify those links in your config file</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            
+                            <li><a href="https://www.facebook.com/brianhammond8">Facebook</a></li>
+                            <li><a href="https://www.instagram.com/brian.hammond">Instagram</a></li>
+                        </ul>
+                </div><!-- /.social -->
         </section><!-- /#extras -->
-	
-        <footer id="contentinfo" >
-                <address id="about" class="vcard ">
-                Proudly powered by <a href="http://getpelican.com/" target="_blank">Pelican</a>, which takes
-                great advantage of <a href="http://python.org" target="_blank">Python</a>.
-		
-                </address><!-- /#about -->
-		
 
-                
+        <footer id="contentinfo" class="body">
+
         </footer><!-- /#contentinfo -->
 
 </body>
